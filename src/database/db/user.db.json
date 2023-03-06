@@ -1,0 +1,30 @@
+[
+    {
+        "name": "Admin 01",
+        "username": "admin01",
+        "password": "PwAdmin01",
+        "phone": "0983242501",
+        "role": "admin"
+    },
+    {
+        "name": "Admin 02",
+        "username": "admin02",
+        "password": "PwAdmin02",
+        "phone": "0983615228",
+        "role": "admin"
+    },
+    {
+        "name": "Guest 01",
+        "username": "guest01",
+        "password": "123456",
+        "phone": "012345789",
+        "role": "guest"
+    },
+    {
+        "name": "Guest 02",
+        "username": "guest02",
+        "password": "123456",
+        "phone": "0987654321",
+        "role": "guest"
+    }
+]

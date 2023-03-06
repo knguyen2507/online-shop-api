@@ -1,0 +1,30 @@
+### Sign in
+
+POST http://localhost:8077/v1/sign-in
+Content-Type: application/json
+
+{
+    "username": "admin01",
+    "password": "PwAdmin01"
+}
+
+###
+POST http://localhost:8077/v1/sign-in
+Content-Type: application/json
+
+{
+    "username": "guest01",
+    "password": "123456"
+}
+
+### Sign up
+POST http://localhost:8077/v1/admin/sign-up
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3Nzg1OTkyOCwiZXhwIjoxNjc3ODYyOTI4fQ.XMrpcDebwLHO3yCSk-MokpbQiDMH1dUAK_XbEO_lOow
+
+{
+    "name": "test1",
+    "username": "test002",
+    "password": "123456",
+    "phone": "0984123018"
+}

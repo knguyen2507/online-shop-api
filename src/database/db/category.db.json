@@ -1,0 +1,13 @@
+[
+    { "id": "tv", "name": "TV" },
+    { "id": "tu-lanh","name": "Tủ lạnh" },
+    { "id": "may-loc-nuoc","name": "Máy lọc nước" },
+    { "id": "may-lanh","name": "Máy lạnh" },
+    { "id": "quat-nuoc","name": "Quạt nước" },
+    { "id": "noi-com-dien","name": "Nồi cơm điện" },
+    { "id": "may-giat","name": "Máy giặt" },
+    { "id": "ban-ghe-tu","name": "Bàn ghế tủ" },
+    { "id": "am-sieu-toc","name": "Ấm siêu tốc" },
+    { "id": "nem","name": "Nệm"},
+    { "id": "other","name": "Khác"}
+]

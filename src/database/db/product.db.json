@@ -1,0 +1,422 @@
+[
+    {
+        "id": "UA43AU8100",
+        "name": "Smart Tivi Samsung 4K Crystal UHD 43 inch UA43AU8100",
+        "qty": 2,
+        "category": "TV",
+        "brand": "Samsung",
+        "price": 9900000,
+        "details": []
+    },
+    {
+        "id": "KD-55X80J",
+        "name": "Android Tivi Sony 4K 55 inch KD-55X80J",
+        "qty": 1,
+        "category": "TV",
+        "brand": "Sony",
+        "price": 14630000,
+        "details": []
+    },
+    {
+        "id": "AQR-T219FA",
+        "name": "Tủ lạnh Aqua Inverter 186 lít AQR-T219FA",
+        "qty": 1,
+        "category": "Tủ lạnh",
+        "brand": "Aqua",
+        "price": 4990000,
+        "details": []
+    },
+    {
+        "id": "RT22M4032BY",
+        "name": "Tủ lạnh Samsung Inverter 236 lít RT22M4032BY",
+        "qty": 3,
+        "category": "Tủ lạnh",
+        "brand": "Samsung",
+        "price": 7390000,
+        "details": []
+    },
+    {
+        "id": "GR-RF610WE-PGV-22-XK",
+        "name": "Tủ lạnh Toshiba Inverter 511 lít GR-RF610WE-PGV(22)-XK",
+        "qty": 1,
+        "category": "Tủ lạnh",
+        "brand": "Toshiba",
+        "price": 21990000,
+        "details": []
+    },
+    {
+        "id": "GR-B22VU",
+        "name": "Tủ lạnh Toshiba Inverter 180 lít GR-B22VU",
+        "qty": 4,
+        "category": "Tủ lạnh",
+        "brand": "Toshiba",
+        "price": 5690000,
+        "details": []
+    },
+    {
+        "id": "MP-290SK",
+        "name": "Máy lọc nước RO Mutosi 9 lõi MP-290SK",
+        "qty": 10,
+        "category": "Máy lọc nước",
+        "brand": "Mutosi",
+        "price": 6790000,
+        "details": []
+    },
+    {
+        "id": "MP-6100HCE",
+        "name": "Máy lọc nước RO nóng lạnh Mutosi 10 lõi MP-6100HCE",
+        "qty": 3,
+        "category": "Máy lọc nước",
+        "brand": "Mutosi",
+        "price": 7990000,
+        "details": []
+    },
+    {
+        "id": "MP-E100S",
+        "name": "Máy lọc nước RO Mutosi 10 lõi MP-E100S",
+        "qty": 5,
+        "category": "Máy lọc nước",
+        "brand": "Mutosi",
+        "price": 5190000,
+        "details": []
+    },
+    {
+        "id": "AR13TYHYCWKNSV",
+        "name": "Máy lạnh Samsung Inverter 1.5 HP AR13TYHYCWKNSV",
+        "qty": 2,
+        "category": "Máy lạnh",
+        "brand": "Samsung",
+        "price": 11790000,
+        "details": []
+    },
+    {
+        "id": "AR09TYHQASINSV",
+        "name": "Máy lạnh Samsung Inverter 1 HP AR09TYHQASINSV",
+        "qty": 2,
+        "category": "Máy lạnh",
+        "brand": "Samsung",
+        "price": 9390000,
+        "details": []
+    },
+    {
+        "id": "SHD7727",
+        "name": "Quạt điều hòa Sunhouse SHD7727",
+        "qty": 3,
+        "category": "Quạt nước",
+        "brand": "Sunhouse",
+        "price":4700000,
+        "details": []
+    },
+    {
+        "id": "SHD7746",
+        "name": "Quạt điều hòa Sunhouse SHD7746",
+        "qty": 1,
+        "category": "Quạt nước",
+        "brand": "Sunhouse",
+        "price": 5990000,
+        "details": []
+    },
+    {
+        "id": "SHD7719",
+        "name": "MÁY LÀM MÁT KHÔNG KHÍ SUNHOUSE SHD7719",
+        "qty": 2,
+        "category": "Quạt nước",
+        "brand": "Sunhouse",
+        "price": 2890000,
+        "details": []
+    },
+    {
+        "id": "RC-10JH2PV-B",
+        "name": "Nồi cơm nắp gài Toshiba 1 lít RC-10JH2PV(B)",
+        "qty": 4,
+        "category": "Nồi cơm điện",
+        "brand": "Toshiba",
+        "price": 676000,
+        "details": []
+    },
+    {
+        "id": "MR-36PS",
+        "name": "Nồi cơm điện Mutosi MR-36PS",
+        "qty": 8,
+        "category": "Nồi cơm điện",
+        "brand": "Mutosi",
+        "price": 1020000,
+        "details": []
+    },
+    {
+        "id": "WW90T634DLN-SV",
+        "name": "Máy giặt Samsung Inverter 9 kg WW90T634DLN/SV",
+        "qty": 3,
+        "category": "Máy giặt",
+        "brand": "Samsung",
+        "price": 9900000,
+        "details": []
+    },
+    {
+        "id": "WW10TP44DSB-SV",
+        "name": "Máy giặt Samsung Inverter 10kg WW10TP44DSB/SV",
+        "qty": 2,
+        "category": "Máy giặt",
+        "brand": "Samsung",
+        "price": 11290000,
+        "details": []
+    },
+    {
+        "id": "TW-BK115G4V-MG",
+        "name": "Máy giặt Toshiba Inverter 10.5 Kg TW-BK115G4V (MG)",
+        "qty": 2,
+        "category": "Máy giặt",
+        "brand": "Toshiba",
+        "price": 12790000,
+        "details": []
+    },
+    {
+        "id": "AW-L805AV-SG",
+        "name": "Máy giặt Toshiba 7 Kg AW-L805AV (SG)",
+        "qty": 1,
+        "category": "Máy giặt",
+        "brand": "Toshiba",
+        "price": 4990000,
+        "details": []
+    },
+    {
+        "id": "bbg-001",
+        "name": "Bộ bàn ghế Nghê phượng",
+        "qty": 1,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 24000000,
+        "details": [
+            {"k": "gỗ", "v": "mun"},
+            {"k": "số món", "v": "6"}
+        ]
+    },
+    {
+        "id": "bbg-002",
+        "name": "Bộ bàn ghế Tần thủy hoàng bàn đục trống đồng",
+        "qty": 1,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 22000000,
+        "details": [
+            {"k": "gỗ", "v": "hương đá"},
+            {"k": "số món", "v": "6"}
+        ]
+    },
+    {
+        "id": "bbg-003",
+        "name": "Bộ bàn ghế Nhật lùn",
+        "qty": 2,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 17000000,
+        "details": [
+            {"k": "gỗ", "v": "căm xe"},
+            {"k": "số món", "v": "7"}
+        ]
+    },
+    {
+        "id": "bg-001",
+        "name": "Bàn gỗ vi tính",
+        "qty": 2,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 2200000,
+        "details": [
+            {"k": "gỗ", "v": "cao su tự nhiên"}
+        ]
+    },
+    {
+        "id": "bg-002",
+        "name": "Bàn gỗ trang điểm",
+        "qty": 3,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 2300000,
+        "details": [
+            {"k": "gỗ", "v": "thông"}
+        ]
+    },
+    {
+        "id": "bn-001",
+        "name": "Bàn nhữa trang điểm",
+        "qty": 4,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 1200000,
+        "details": []
+    },
+    {
+        "id": "bn-002",
+        "name": "Bàn học sinh liền giá sách nhựa",
+        "qty": 5,
+        "category": "Bàn ghế tủ",
+        "brand": "Duy Tân",
+        "price": 1300000,
+        "details": []
+    },
+    {
+        "id": "tn-001",
+        "name": "Tủ nhựa Duy Tân tabi",
+        "qty": 4,
+        "category": "Bàn ghế tủ",
+        "brand": "Duy Tân",
+        "price": 1400000,
+        "details": []
+    },
+    {
+        "id": "tn-002",
+        "name": "Tủ nhựa Duy Tân tabi",
+        "qty": 4,
+        "category": "Bàn ghế tủ",
+        "brand": "Duy Tân",
+        "price": 1400000,
+        "details": []
+    },
+    {
+        "id": "tg-001",
+        "name": "Tủ áo gỗ gõ đỏ 4 cánh 2m",
+        "qty": 2,
+        "category": "Bàn ghế tủ",
+        "brand": "Others",
+        "price": 8000000,
+        "details": [
+            {"k": "gỗ", "v": "gõ đỏ"}
+        ]
+    },
+    {
+        "id": "SHD1351",
+        "name": "Bình đun siêu tốc Sunhouse 1.8 lít SHD1351",
+        "qty": 16,
+        "category": "Ấm siêu tốc",
+        "brand": "Sunhouse",
+        "price": 330000,
+        "details": []
+    },
+    {
+        "id": "SHD1217",
+        "name": "Bình đun siêu tốc thủy tinh Sunhouse 1.7 lít SHD1217",
+        "qty": 8,
+        "category": "Ấm siêu tốc",
+        "brand": "Sunhouse",
+        "price": 450000,
+        "details": []
+    },
+    {
+        "id": "n-001",
+        "name": "Nệm 1m8",
+        "qty": 5,
+        "category": "Nệm",
+        "brand": "Others",
+        "price": 1800000,
+        "details": []
+    },
+    {
+        "id": "n-002",
+        "name": "Nệm 1m6",
+        "qty": 10,
+        "category": "Nệm",
+        "brand": "Others",
+        "price": 1600000,
+        "details": []
+    },
+    {
+        "id": "n-003",
+        "name": "Nệm 1m4",
+        "qty": 12,
+        "category": "Nệm",
+        "brand": "Others",
+        "price": 1400000,
+        "details": []
+    },
+    {
+        "id": "n-004",
+        "name": "Nệm 1m2",
+        "qty": 8,
+        "category": "Nệm",
+        "brand": "Others",
+        "price": 1200000,
+        "details": []
+    },
+    {
+        "id": "n-003",
+        "name": "Nệm 1m",
+        "qty": 4,
+        "category": "Nệm",
+        "brand": "Others",
+        "price": 800000,
+        "details": []
+    },
+    {
+        "id": "k-dl-001",
+        "name": "Bóng đèn Rạng Đông LED BULB trụ 12W",
+        "qty": 12,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 90000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "đèn LED"}
+        ]
+    },
+    {
+        "id": "k-dl-002",
+        "name": "Bóng đèn Rạng Đông LED BULB tròn 12W",
+        "qty": 8,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 80000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "đèn LED"}
+        ]
+    },
+    {
+        "id": "k-oc-001",
+        "name": "Ổ cắm đa năng USB 5m",
+        "qty": 6,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 320000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "ổ cắm"}
+        ]
+    },
+    {
+        "id": "k-dpl-001",
+        "name": "Đèn Pin LED Model: D CS 036DC/2,5W",
+        "qty": 4,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 130000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "đèn pin LED"}
+        ]
+    },
+    {
+        "id": "k-dpl-002",
+        "name": "Đèn Pin Led Đội đầu 5W Model: LED D PDD03L/5W",
+        "qty": 4,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 240000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "đèn pin LED"}
+        ]
+    },
+    {
+        "id": "k-vbm-001",
+        "name": "Vợt bắt muỗi VBM RD.03",
+        "qty": 5,
+        "category": "Khác",
+        "brand": "Others",
+        "price": 180000,
+        "details": [
+            {"k": "thương hiệu", "v": "Rạng Đông"},
+            {"k": "sản phẩm", "v": "Vợt bắt mũi"}
+        ]
+    }
+]
