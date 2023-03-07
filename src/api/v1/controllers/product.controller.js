@@ -2,6 +2,7 @@
 import { productServices } from "../services/product.service.js";
 
 export const productControllers = {
+    // get all products
     getAllProduct: async (req, res) => {
         try {
             const { code, elements } = await productServices.get_all_product({});
@@ -12,6 +13,7 @@ export const productControllers = {
         }
     },
 
+    // create new product
     createNewProduct: async (req, res) => {
         try {
             const { id, name, qty, category, brand, price, details } = req.body;
@@ -23,6 +25,7 @@ export const productControllers = {
         }
     },
 
+    // get product by id
     getProductById: async (req, res) => {
         try {
             const idProduct = req.params.id;
@@ -34,6 +37,7 @@ export const productControllers = {
         }
     },
 
+    // update product
     updateProduct: async (req, res) => {
         try {
             const id = req.params.id;
@@ -45,6 +49,7 @@ export const productControllers = {
         }
     },
 
+    // delete product
     deleteProduct: async (req, res) => {
         try {
             const idProduct = req.params.id;

@@ -2,6 +2,7 @@
 import _Category from '../models/category.model.js';
 
 export const categoryServices = {
+    // get all categories
     get_all_category: async () => {
         try {
             const category = await _Category.find({});
@@ -15,6 +16,7 @@ export const categoryServices = {
         }
     },
 
+    // create new category
     create_new_category: async ({
         id, name
     }) => {
@@ -35,6 +37,7 @@ export const categoryServices = {
         }
     },
 
+    // get category by id
     get_category_by_id: async ({ idCategory }) => {
         try {
             const category = await _Category.find({id: idCategory});
@@ -48,6 +51,7 @@ export const categoryServices = {
         }
     },
 
+    // update category
     update_category: async ({
         id, name
     }) => {
@@ -65,6 +69,7 @@ export const categoryServices = {
         }
     },
 
+    // delete category
     delete_category: async ({ 
         idCategory 
     }) => {

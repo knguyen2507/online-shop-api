@@ -2,14 +2,17 @@
 import _User from '../models/user.model.js';
 
 export const authUser = {
+    // check log in
     checkSignIn: async (req, res, next) => {
         try {
+            // check request input
             if (req.body.username === "" || req.body.password === "") {
                 return res.status(400).json({msg: 'Bad Request. Please Fill all fields'});
             }
 
             const user = _User.findOne({username: req.body.username});
 
+            // check username is avaiable
             if (!user) {
                 res.status(403).send({ message: "Wrong username or password!" });
                 return;
@@ -21,8 +24,10 @@ export const authUser = {
         }
     },
 
+    // check register
     checkSignUp: async (req, res, next) => {
         try {
+            // check request input
             if (req.body.name == "" || req.body.username == "" || req.body.phone == "" || req.body.password == "") {
                 return res.status(400).json({msg: 'Bad Request. Please Fill all fields'});
             }
@@ -47,6 +52,26 @@ export const authUser = {
             next();
         } catch (error) {
             console.log(error)
+        }
+    },
+
+    // check change password
+    checkChangePassword: async (req, res, next) => {
+        try {
+            // check request input
+            if (req.body.password == "" || req.body.re_password == "") {
+                return res.status(400).json({msg: 'Bad Request. Please Fill all fields'});
+            }
+
+            // check password and re-enter password
+            if (req.body.password !== req.body.re_password) {
+                res.status(400).send({message: "Incorrect password"});
+                return;
+            }
+
+            next();
+        } catch (error) {
+            console.log(error);
         }
     }
 }

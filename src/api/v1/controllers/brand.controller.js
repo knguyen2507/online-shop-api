@@ -2,6 +2,7 @@
 import { brandServices } from "../services/brand.service.js";
 
 export const brandControllers = {
+    // get all brands
     getAllBrand: async (req, res) => {
         try {
             const { code, elements } = await brandServices.get_all_brand({});
@@ -12,6 +13,7 @@ export const brandControllers = {
         }
     },
 
+    // create new brand
     createNewBrand: async (req, res) => {
         try {
             const { id, name } = req.body
@@ -23,6 +25,7 @@ export const brandControllers = {
         }
     },
 
+    // get brand by id
     getBrandById: async (req, res) => {
         try {
             const idBrand = req.params.id
@@ -34,6 +37,7 @@ export const brandControllers = {
         }
     },
 
+    // update brand
     updateBrand: async (req, res) => {
         try {
             const id = req.params.id;
@@ -45,6 +49,7 @@ export const brandControllers = {
         }
     },
 
+    // delete brand
     deleteBrand: async (req, res) => {
         try {
             const idBrand = req.params.id;

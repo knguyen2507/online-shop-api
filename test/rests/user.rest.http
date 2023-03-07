@@ -18,13 +18,22 @@ Content-Type: application/json
 }
 
 ### Sign up
-POST http://localhost:8077/v1/admin/sign-up
+POST http://localhost:8077/v1/sign-up-guest
 Content-Type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3Nzg1OTkyOCwiZXhwIjoxNjc3ODYyOTI4fQ.XMrpcDebwLHO3yCSk-MokpbQiDMH1dUAK_XbEO_lOow
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODE1OTk5MCwiZXhwIjoxNjc4MTYyOTkwfQ.uQlZbJUjo2hLwI_yfNXAxkjMLKD3JKU8fj1bZgMRTl8
 
 {
     "name": "test1",
-    "username": "test002",
+    "username": "test001",
     "password": "123456",
-    "phone": "0984123018"
+    "phone": "0984123017"
+}
+
+### log in
+POST http://localhost:8077/v1/sign-in
+Content-Type: application/json
+
+{
+    "username": "test001",
+    "password": "123456"
 }

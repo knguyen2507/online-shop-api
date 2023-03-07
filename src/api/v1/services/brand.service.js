@@ -2,6 +2,7 @@
 import _Brand from '../models/brand.model.js';
 
 export const brandServices = {
+    // get all brand
     get_all_brand: async () => {
         try {
             const brand = await _Brand.find({});
@@ -15,6 +16,7 @@ export const brandServices = {
         }
     },
 
+    // create new brand
     create_new_brand: async ({
         id, name
     }) => {
@@ -35,6 +37,7 @@ export const brandServices = {
         }
     },
 
+    // get brand by id
     get_brand_by_id: async ({ idBrand }) => {
         try {
             const brand = await _Brand.find({id: idBrand});
@@ -48,6 +51,7 @@ export const brandServices = {
         }
     },
 
+    // update brand
     update_brand: async ({
         id, name
     }) => {
@@ -65,6 +69,7 @@ export const brandServices = {
         }
     },
 
+    // delete brand
     delete_brand: async ({ 
         idBrand 
     }) => {

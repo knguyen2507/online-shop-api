@@ -2,8 +2,10 @@ import jwt from "jsonwebtoken";
 import _User from '../models/user.model.js';
 
 export const authToken = {
+    // verify token
     verifytoken: async (req, res, next) => {
         try {
+            // get authorization header
             const authHeader = req.headers["authorization"];
 
             if (!authHeader) {
@@ -11,6 +13,7 @@ export const authToken = {
                 return;
             }
 
+            // authHeader = 'bearer' + token
             const token = authHeader.split(' ')[1];
 
             if (!token) {
@@ -18,6 +21,7 @@ export const authToken = {
                 return;
             }
 
+            // verify token
             jwt.verify(token, process.env.SECRET_ACCESS_TOKEN, (err, decoded) => {
                 if (err) {
                     return res.status(401).send({message: "Don't have access"});
@@ -41,6 +45,7 @@ export const authPage = permission => {
             return;
         }
 
+        // check role base
         if(!permission.includes(user.role)) {
             return res.status(401).send({message: "Your account does not have access!"});
         }

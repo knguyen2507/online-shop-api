@@ -2,6 +2,7 @@
 import _Product from '../models/product.model.js';
 
 export const productServices = {
+    // get all products
     get_all_product: async () => {
         try {
             const product = await _Product.find({});
@@ -15,6 +16,7 @@ export const productServices = {
         }
     },
     
+    // create new product
     create_new_product: async ({
         id, name, qty, category, brand, price, details
     }) => {
@@ -40,6 +42,7 @@ export const productServices = {
         }
     },
 
+    // get product by id
     get_product_by_id: async ({
         idProduct
     }) => {
@@ -55,6 +58,7 @@ export const productServices = {
         }
     },
 
+    // update product
     update_product: async ({
         id, name, qty, category, brand, price, details
     }) => {
@@ -82,6 +86,7 @@ export const productServices = {
         }
     },
 
+    // delete product
     delete_product: async ({ 
         idProduct 
     }) => {

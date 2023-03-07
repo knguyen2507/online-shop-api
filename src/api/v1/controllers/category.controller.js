@@ -2,6 +2,7 @@
 import { categoryServices } from "../services/category.service.js";
 
 export const categoryControllers = {
+    // get all categories
     getAllCategory: async (req, res) => {
         try {
             const { code, elements } = await categoryServices.get_all_category({});
@@ -12,6 +13,7 @@ export const categoryControllers = {
         }
     },
 
+    // create new category
     createNewCategory: async (req, res) => {
         try {
             const { id, name } = req.body
@@ -23,6 +25,7 @@ export const categoryControllers = {
         }
     },
 
+    // get category by id
     getCategoryById: async (req, res) => {
         try {
             const idCategory = req.params.id
@@ -34,6 +37,7 @@ export const categoryControllers = {
         }
     },
 
+    // update category
     updateCategory: async (req, res) => {
         try {
             const id = req.params.id;
@@ -45,6 +49,7 @@ export const categoryControllers = {
         }
     },
 
+    // delete category
     deleteCategory: async (req, res) => {
         try {
             const idCategory = req.params.id;
