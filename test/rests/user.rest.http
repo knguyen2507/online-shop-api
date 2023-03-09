@@ -1,6 +1,8 @@
+@url=http://localhost:8077
+
 ### Sign in
 
-POST http://localhost:8077/v1/sign-in
+POST {{url}}/v1/user/sign-in
 Content-Type: application/json
 
 {
@@ -9,7 +11,7 @@ Content-Type: application/json
 }
 
 ###
-POST http://localhost:8077/v1/sign-in
+POST {{url}}/v1/user/sign-in
 Content-Type: application/json
 
 {
@@ -18,7 +20,7 @@ Content-Type: application/json
 }
 
 ### Sign up
-POST http://localhost:8077/v1/sign-up-guest
+POST {{url}}/v1/user/sign-up-guest
 Content-Type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODE1OTk5MCwiZXhwIjoxNjc4MTYyOTkwfQ.uQlZbJUjo2hLwI_yfNXAxkjMLKD3JKU8fj1bZgMRTl8
 
@@ -30,10 +32,33 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4N
 }
 
 ### log in
-POST http://localhost:8077/v1/sign-in
+POST {{url}}/v1/user/sign-in
 Content-Type: application/json
 
 {
-    "username": "test001",
+    "username": "test002",
     "password": "123456"
+}
+
+###
+DELETE {{url}}/v1/user/6407060dcfa11cabde88fa79
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODE4NDgyNywiZXhwIjoxNjc4MTg0ODU3fQ.MixXLpZIOmsWDh2-YlIy0DHXvbWL0xsZ8mzH4MNVVu4
+
+###
+POST {{url}}/v1/brand/create-new-brand
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODI3Mjc5NywiZXhwIjoxNjc4MjcyODA3fQ.YmcK7j7bmpSVh299mnBw04GmNR10aTjWldR2LrC6o_8
+
+{
+    "id": "test",
+    "name": "test"
+}
+
+###
+POST {{url}}/v1/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDZiMDgxMzgyM2I3OWE2Nzk0OTk5NiIsImlhdCI6MTY3ODI3Nzc1OSwiZXhwIjoxNzA5ODM1MzU5fQ.aC8hktbj8x7eQxkLsUsZDNbhbAoTjB9JG8cBUHQu_Aw"
 }

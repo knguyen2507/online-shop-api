@@ -1,7 +1,8 @@
 import bcrypt from 'bcrypt';
-import jwt from 'jsonwebtoken';
 // Models
 import _User from '../models/user.model.js';
+// Services
+import { signToken } from './jwt.service.js';
 
 export const userServices = {
     // Login user
@@ -10,6 +11,12 @@ export const userServices = {
     }) => {
         try {
             const user = await _User.findOne({username});
+            if (!user) {
+                return {
+                    code: 403,
+                    message: "Wrong username or password"
+                }
+            }
             // check password
             const isValid = await bcrypt.compare(password, user.password);
             if (!isValid) {
@@ -20,16 +27,18 @@ export const userServices = {
             }
 
             // get access token
-            const token = jwt.sign({id: user.id}, process.env.SECRET_ACCESS_TOKEN, {
-                expiresIn: 3000
-            })
+            const accessToken = await signToken.signAccessToken(user.id);
+            // get refresh token
+            const refreshToken = await signToken.signRefreshToken(user.id);
+
 
             return {
                 code: 200,
                 elements: {
                     id: user.id,
                     name: user.name,
-                    accessToken: token
+                    accessToken: accessToken,
+                    refreshToken: refreshToken
                 }
             }
         } catch (error) {
@@ -170,8 +179,12 @@ export const userServices = {
                 }
             }
 
+            const salt = await bcrypt.genSalt(10);
+            // hash password
+            const hashPW = await bcrypt.hash(password, salt);
+
             const u = await _User.updateOne({_id: id}, { $set: {
-                password: password
+                password: hashPW
             }});
 
             return {

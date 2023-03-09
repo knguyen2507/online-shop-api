@@ -9,7 +9,7 @@ export const categoryControllers = {
 
             return res.status(code).json({code, elements});
         } catch (error) {
-            console.log(error);
+            next(error);
         }
     },
 
@@ -21,7 +21,7 @@ export const categoryControllers = {
 
             return res.status(code).json({code, elements});
         } catch (error) {
-            console.log(error);
+            next(error);
         }
     },
 
@@ -33,7 +33,7 @@ export const categoryControllers = {
 
             return res.status(code).json({code, elements});
         } catch (error) {
-            console.log(error);
+            next(error);
         }
     },
 
@@ -45,7 +45,7 @@ export const categoryControllers = {
             const { code, elements, message } = await categoryServices.update_category({id, name});
             return res.status(code).json({code, elements, message});
         } catch (error) {
-            console.log(error);
+            next(error);
         }
     },
 
@@ -57,7 +57,7 @@ export const categoryControllers = {
 
             return res.status(code).json({code, message});
         } catch (error) {
-            console.log(error);
+            next(error);
         }
     }
 }

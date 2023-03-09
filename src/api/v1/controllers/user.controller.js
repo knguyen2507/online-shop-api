@@ -12,7 +12,6 @@ export const userControllers = {
                 code, message, elements
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -27,7 +26,6 @@ export const userControllers = {
                 code, message, elements
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -42,7 +40,6 @@ export const userControllers = {
                 code, message, elements
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -58,7 +55,6 @@ export const userControllers = {
                 code, message, elements
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -73,7 +69,6 @@ export const userControllers = {
                 code, message
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -88,7 +83,6 @@ export const userControllers = {
                 code, elements
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     },
@@ -104,7 +98,6 @@ export const userControllers = {
                 code, message
             })
         } catch (error) {
-            console.log(error);
             next(error);
         }
     }
