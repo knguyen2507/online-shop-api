@@ -31,15 +31,6 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4N
     "phone": "0984123017"
 }
 
-### log in
-POST {{url}}/v1/user/sign-in
-Content-Type: application/json
-
-{
-    "username": "test002",
-    "password": "123456"
-}
-
 ###
 DELETE {{url}}/v1/user/6407060dcfa11cabde88fa79
 Content-Type: application/json
@@ -55,10 +46,19 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4N
     "name": "test"
 }
 
-###
-POST {{url}}/v1/refresh-token
+### log in
+POST {{url}}/v1/user/sign-in
 Content-Type: application/json
 
 {
-    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDZiMDgxMzgyM2I3OWE2Nzk0OTk5NiIsImlhdCI6MTY3ODI3Nzc1OSwiZXhwIjoxNzA5ODM1MzU5fQ.aC8hktbj8x7eQxkLsUsZDNbhbAoTjB9JG8cBUHQu_Aw"
+    "username": "test002",
+    "password": "123456"
+}
+
+###
+POST {{url}}/v1/user/refresh-token
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDZiMDgxMzgyM2I3OWE2Nzk0OTk5NiIsImlhdCI6MTY3ODQ0MzI3OSwiZXhwIjoxNzEwMDAwODc5fQ._Wku0JveUU7cnXYsK-nhwqMIkS2bsgWw9h-kQ1s6in0"
 }

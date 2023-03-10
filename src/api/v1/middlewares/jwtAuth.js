@@ -1,6 +1,8 @@
 import jwt from "jsonwebtoken";
-import _User from '../models/user.model.js';
 import createError from 'http-errors';
+// Models
+import _User from '../models/user.model.js';
+import _RefreshToken from '../models/refreshToken.model.js';
 
 export const authToken = {
     // verify access token
@@ -36,12 +38,12 @@ export const authToken = {
         }
     },
 
-    // verify refresh token
     verifyRefreshToken: async (req, res, next) => {
         try {
             const { refreshToken } = req.body;
             if(!refreshToken) return createError.BadRequest();
 
+            const rf = await _RefreshToken.findOne({token: refreshToken});
             // verify refresh token
             jwt.verify(refreshToken, process.env.SECRET_REFRESH_TOKEN, (err, decoded) => {
                 if (err) {
@@ -50,8 +52,13 @@ export const authToken = {
                     }
                     return next(createError.Unauthorized(err.message));
                 }
-                req.payload = decoded;
+                if(refreshToken === rf.token) {
+                    if (rf.TTL < Date.now()) {
+                        return next(createError.Unauthorized('Refresh Token has expired'));
+                    }
+                    req.payload = decoded;
                 next();
+                }
             });
         } catch (error) {
             next(error);

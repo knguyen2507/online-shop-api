@@ -16,5 +16,6 @@ router.delete('/:id', [authToken.verifyAccessToken, authPage(['admin'])], userCo
 router.get('/:id', authToken.verifyAccessToken, userControllers.getUserById); // view information user
 router.put('/:id/change-password', authUser.checkChangePassword, authToken.verifyAccessToken, userControllers.changePassword); // change password
 router.post('/refresh-token', authToken.verifyRefreshToken, refreshToken); // get access token from refresh token
+// router.post('/refresh-token', authToken.verifyTest, refreshToken);
 
 export default router;

@@ -8,9 +8,9 @@ export const refreshToken = async (req, res, next) => {
         if (!refreshToken) return createError.BadRequest();
 
         const payload = req.payload;
-        const { accessToken, refToken } = await refresh_token(payload);
+        const { accessToken } = await refresh_token(payload);
         return res.json({ 
-            accessToken, refToken
+            accessToken
          });
     } catch (error) {
         next(error);
