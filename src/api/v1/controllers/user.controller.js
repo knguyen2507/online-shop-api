@@ -100,5 +100,21 @@ export const userControllers = {
         } catch (error) {
             next(error);
         }
+    },
+
+    // Log out
+    logOut: async (req, res, next) => {
+        try {
+            const { refreshToken } = req.body;
+    
+            const payload = req.payload;
+            const { code, message } = await userServices.log_out({payload});
+
+            return res.status(code).json({
+                code, message
+            })
+        } catch (error) {
+            next(error);
+        }
     }
 }

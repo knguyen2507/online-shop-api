@@ -60,5 +60,13 @@ POST {{url}}/v1/user/refresh-token
 Content-Type: application/json
 
 {
-    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY0MDZiMDgxMzgyM2I3OWE2Nzk0OTk5NiIsImlhdCI6MTY3ODQ0MzI3OSwiZXhwIjoxNzEwMDAwODc5fQ._Wku0JveUU7cnXYsK-nhwqMIkS2bsgWw9h-kQ1s6in0"
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODUyNjAxMCwiZXhwIjoxNzEwMDgzNjEwfQ.gSO0VVf7vtM2ZbsurY5JT4Hp2svCqC-X63shlNpj38c"
+}
+
+###
+DELETE {{url}}/v1/user/logout
+Content-Type: application/json
+
+{
+    "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYzZmYxZGI4NGIwZGMzODYzNWNjOWEyNCIsImlhdCI6MTY3ODUyNjAxMCwiZXhwIjoxNzEwMDgzNjEwfQ.gSO0VVf7vtM2ZbsurY5JT4Hp2svCqC-X63shlNpj38c"
 }

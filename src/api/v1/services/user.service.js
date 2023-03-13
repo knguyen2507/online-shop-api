@@ -1,6 +1,7 @@
 import bcrypt from 'bcrypt';
 // Models
 import _User from '../models/user.model.js';
+import _RefreshToken from '../models/refreshToken.model.js';
 // Services
 import { signToken } from './jwt.service.js';
 
@@ -190,6 +191,21 @@ export const userServices = {
             return {
                 code: 201,
                 message: "Password updated Successfully!"
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    },
+
+    // Log out
+    log_out: async ({ payload }) => {
+        try {
+            const id = payload.id;
+    
+            await _RefreshToken.deleteOne({userId: id});
+            return {
+                code: 201,
+                message: `Logout Successfully!`
             }
         } catch (error) {
             console.log(error);

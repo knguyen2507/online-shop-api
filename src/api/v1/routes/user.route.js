@@ -10,12 +10,13 @@ const router = express.Router();
 
 router.post('/sign-in', authUser.checkSignIn, userControllers.signIn); // log in
 router.post('/sign-up-guest', authUser.checkSignUp, userControllers.signUpGuest); // register guest account
+router.delete('/logout', authToken.verifyRefreshToken, userControllers.logOut); // log out
 router.post('/admin/sign-up', authUser.checkSignUp, [authToken.verifyAccessToken, authPage(['admin'])], userControllers.signUpAdmin); // register admin account
 router.put('/:id', authToken.verifyAccessToken, userControllers.updateUser); // update information user
 router.delete('/:id', [authToken.verifyAccessToken, authPage(['admin'])], userControllers.deleteUser); // delete user
 router.get('/:id', authToken.verifyAccessToken, userControllers.getUserById); // view information user
 router.put('/:id/change-password', authUser.checkChangePassword, authToken.verifyAccessToken, userControllers.changePassword); // change password
 router.post('/refresh-token', authToken.verifyRefreshToken, refreshToken); // get access token from refresh token
-// router.post('/refresh-token', authToken.verifyTest, refreshToken);
+
 
 export default router;

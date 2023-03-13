@@ -44,6 +44,11 @@ export const authToken = {
             if(!refreshToken) return createError.BadRequest();
 
             const rf = await _RefreshToken.findOne({token: refreshToken});
+            console.log(refreshToken);
+            console.log(rf);
+            if (!rf) {
+                return next(createError.Forbidden('You need sign in!'));
+            }
             // verify refresh token
             jwt.verify(refreshToken, process.env.SECRET_REFRESH_TOKEN, (err, decoded) => {
                 if (err) {
@@ -52,13 +57,14 @@ export const authToken = {
                     }
                     return next(createError.Unauthorized(err.message));
                 }
-                if(refreshToken === rf.token) {
-                    if (rf.TTL < Date.now()) {
-                        return next(createError.Unauthorized('Refresh Token has expired'));
-                    }
-                    req.payload = decoded;
-                next();
+                if (refreshToken !== rf.token) {
+                    return next(createError.Unauthorized('Your account does not have access!'));
                 }
+                if (rf.TTL < Date.now()) {
+                    return next(createError.Unauthorized('Refresh Token has expired'));
+                }
+                req.payload = decoded;
+                next();
             });
         } catch (error) {
             next(error);
